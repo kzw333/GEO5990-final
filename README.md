@@ -1,19 +1,19 @@
 # GEO5990-final
 # README.md
 
-## 🌍 Leeds House Price Insight Project
+##  Exploring the Relationship Between House Age and Property Prices in Leeds(1995–2020)
 
-### 📅 Last Updated: May 2025
+###  Last Updated: May 2025
 
 ---
 
-### 🔎 Overview
+###  Overview
 
 This project investigates spatial and temporal variations in house prices across Leeds, UK, using openly available spatial and transactional datasets. It follows a data science process to provide insights that support public good decisions, such as urban planning and improved housing affordability.
 
 ---
 
-### 📈 Objectives
+###  Objectives
 
 * Understand how house prices have evolved across Leeds from 1995 to 2020.
 * Identify spatial inequalities in house prices.
@@ -22,50 +22,20 @@ This project investigates spatial and temporal variations in house prices across
 
 ---
 
-### 📄 Data Sources
+###  Data Sources
 
-1. **UK Land Registry Price Paid Data**
+•	VOA Property Age Data(voapropertyage.csv)
+Source: Valuation Office Agency (VOA). This dataset provides the proportion of residential buildings by construction period within each LSOA. It is used to estimate the distribution of housing age across Leeds.
+•	Median House Prices (Median_Prices_Quarterly.csv)
+Source: CDRC / HM Land Registry. This dataset contains median house prices by quarter and by LSOA between 1995 Q1 and 2018 Q4, enabling temporal analysis of housing price trends.
+•	Average House Prices in 2020–2021(hpssa202103.csv)
+Source: CDRC / HM Land Registry..
+This dataset provides average house prices by LSOA for Q1 2020 and Q2 2021. Values are averaged over 12 months including the quarter. The dataset is used in the CDRC Mapmaker and is suitable for spatial comparison of recent house prices.
+•	Leeds Boundary GeoJSON(Leeds.geojson)
+Source: OpenStreetMap (OSM). A GeoJSON file containing the boundaries of LSOAs within the Leeds metropolitan area, required for mapping and spatial analysis.
 
-   * Source: [https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads](https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads)
-   * Data: Residential property transactions in England and Wales
-   * Licence: Open Government Licence v3.0
 
-2. **ONS LSOA Boundaries (Leeds)**
-
-   * Source: [https://geoportal.statistics.gov.uk](https://geoportal.statistics.gov.uk)
-   * Data: Lower Layer Super Output Area (LSOA) shapefiles for Leeds
-   * Licence: Open Government Licence
-
----
-
-### 🔢 Key Files
-
-| File                   | Description                                                    |
-| ---------------------- | -------------------------------------------------------------- |
-| `leeds_analysis.ipynb` | Main analysis notebook (see structure below)                   |
-| `data/`                | Folder containing shapefiles and house price data              |
-| `outputs/`             | Folder containing final spatial and non-spatial visualisations |
-| `requirements.txt`     | Optional file listing Python dependencies                      |
-
----
-
-### 📊 Final Outputs
-
-#### 🌍 Spatial Visualisation (for policymakers)
-
-* **Title:** Average House Prices in Leeds, 2020
-* **Insight:** Identifies areas where affordability is low.
-* **Design:** Color-coded map using a choropleth style.
-
-#### 📉 Non-Spatial Visualisation (for the public/homebuyers)
-
-* **Title:** Average House Prices by Type (2020)
-* **Insight:** Shows pricing differences by house type (e.g. detached vs flat).
-* **Design:** Clear, readable bar chart with colour differentiation.
-
----
-
-### 🚀 How to Run
+###  How to Run
 
 1. Clone the repository:
 
@@ -86,15 +56,9 @@ jupyter notebook leeds_analysis.ipynb
 pip install geopandas matplotlib pandas
 ```
 
----
 
-### 📚 License
 
-This project uses open datasets licensed under the Open Government Licence. All code is shared under the MIT License.
-
----
-
-### 📍 Acknowledgements
+###  Acknowledgements
 
 * UK Land Registry
 * Office for National Statistics (ONS)
