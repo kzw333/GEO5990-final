@@ -5,7 +5,6 @@
 
 ###  Last Updated: May 2025
 
-
 ###  Overview
 Housing affordability and urban transformation are pressing challenges faced by many UK cities, including Leeds. Understanding the relationship between building age and house prices can provide valuable insights for urban renewal strategies, real estate investment decisions, and housing equity analyses. Older properties may have historical value or structural challenges, while newer properties often reflect recent development trends and planning policies.
 This project investigates spatial and temporal variations in house prices across Leeds, UK, using openly available spatial and transactional datasets. It follows a data science process to provide insights that support public good decisions, such as urban planning and improved housing affordability.
@@ -63,10 +62,13 @@ scikit-learn
 
 ### File Structure
 File/Folder	Description
+
 geog5990m_final_project_template.ipynb	Main analysis notebook with code and outputs
+
 data/	Folder containing shapefiles and house price data
+
 outputs/	Folder containing final visualizations and results
-requirements.txt	Optional file listing Python dependencies for the environment
+
 
 ### How to Run
 Clone or download this repository to your local machine.
