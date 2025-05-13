@@ -65,9 +65,7 @@ File/Folder	Description
 
 geog5990m_final_project_template.ipynb	Main analysis notebook with code and outputs
 
-data/	Folder containing shapefiles and house price data
-
-outputs/	Folder containing final visualizations and results
+data/	voapropertyage.csv,Median_Prices_Quarterly.csv,hpssa202103.csv,Leeds.geojson
 
 
 ### How to Run
